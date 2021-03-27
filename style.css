@@ -17,8 +17,10 @@
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.header { text-align: center;
+@media (max-width:768px) 
+{
+   .header {
+        text-align: center;
 }
 }
 .main {
@@ -95,14 +97,15 @@ input#new-task {
     width: 318px;
 }
 
-.main-button:hover{color: #0fc57c;}
+.main-button:hover{ 
+    color: #0fc57c;
+}
 
 /* task list */
 .list-point,.edit-Mode {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
