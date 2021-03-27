@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.main-wrapper {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -34,11 +34,14 @@ body {
 .task-row-wrapper {
     display: flex;
 }
-ul {
+.list{
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.do{
+    list-style:none;
+}
+.list-point {
     list-style:none;
 }
 input,button{
@@ -53,7 +56,7 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.delete,.main-button:hover {
     color: #3a3A3a;
 }
 /* heading */
@@ -95,7 +98,7 @@ input#new-task {
 .main-button:hover{color: #0fc57c;}
 
 /* task list */
-li {
+.list-point,.edit-Mode {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -105,7 +108,7 @@ li {
     align-items: center;
 }
 
-li {
+.list-point,.edit-Mode{
     vertical-align: middle;
 }
 
