@@ -91,10 +91,8 @@ label[for="new-task"] {
 input#new-task {
     width: 318px;
 }
-/*p > button:hover {
-    color: #0fc57c;
-}*/
-.main_button:hover{color: #0fc57c;}
+
+.main-button:hover{color: #0fc57c;}
 
 /* task list */
 li {
@@ -106,9 +104,6 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-/*li > * {
-    vertical-align: middle;
-}*/
 
 li {
     vertical-align: middle;
@@ -149,11 +144,11 @@ ul li input[type=text] {
     display:none
 }
 
-ul li.editmode input[type=text] {
+ul li.edit-mode input[type=text] {
     display:inline-block;
     width:224px
 }
 
-ul li.editmode label {
+ul li.edit-mode label {
     display:none;
 }
