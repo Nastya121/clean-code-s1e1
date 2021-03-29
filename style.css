@@ -1,27 +1,30 @@
 /* Basic Style */
-body {
+.main-wrapper {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
 }
-.aaa {
+.header {
     width: 500px;
     margin: 0 auto;
     display: block;
     text-align: right;
 }
-.aaa img {
+.header img {
     width: 100%;
 }
-.aaa .more_inf {
+.header 
+.more-inf {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
-.aaa { text-align: center;
+@media (max-width:768px) 
+{
+   .header {
+        text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
@@ -29,16 +32,19 @@ body {
 .task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 .task-row-wrapper {
     display: flex;
 }
-ul {
+.list{
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.do{
+    list-style:none;
+}
+.list-point {
     list-style:none;
 }
 input,button{
@@ -53,12 +59,14 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.delete,
+.main-button:hover {
     color: #3a3A3a;
 }
-/* Heading */
+/* heading */
+h1,
 h3,
-label[for='new-task'] {
+label[for="new-task"] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,29 +91,32 @@ input[type="text"]:focus {
     color: #333;
 }
 
-/* New Task */
-label[for='new-task'] {
+/* new task */
+label[for="new-task"] {
     display: block;
     margin: 0 0 20px;
 }
 input#new-task {
     width: 318px;
 }
-p > button:hover {
-    color: #0FC57C;
+
+.main-button:hover{ 
+    color: #0fc57c;
 }
 
-/* Task list */
-li {
+/* task list */
+.list-point,
+.edit-Mode {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+
+.list-point,
+.edit-Mode{
     vertical-align: middle;
 }
 
@@ -118,11 +129,11 @@ li > label {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
-    width: 226px
+li >input[type="text"] {
+    width: 226px;
 }
 li > button.delete:hover {
-    color: #CF2323;
+    color: #cf2323;
 }
 button.delete img {
     height: 2em;
@@ -133,22 +144,22 @@ button.delete img:hover {
     transform: rotateZ(0);
 }
 
-/* Completed */
+/* completed */
 ul#completed-tasks label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
-/* Edit Task */
+/* edit task */
 ul li input[type=text] {
-    display:none
+    display: none;
 }
 
-ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px
+ul li.edit-mode input[type=text] {
+    display: inline-block;
+    width: 224px;
 }
 
-ul li.editMode label {
-    display:none;
+ul li.edit-mode label {
+    display: none;
 }
